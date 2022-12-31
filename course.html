@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Mathematical embroidery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <script src="https://kit.fontawesome.com/ede9840980.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<section class="sub-header-course"> 
+    <nav>
+        <a href="index.html"><img scr="https://media.geeksforgeeks.org/wp-content/uploads/20190506164011/logo3.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+        <h1>Courses</h1>
+
+
+</section>
+
+
+
+<!---------------- courses ---------------->
+<section class="course">
+    <h1>Courses we offer</h1>
+    <p>We want our courses to be applicable to anyone and that's why we have 3 courses to choose from - depending on what's your goal.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Beginner</h3>
+            <p>If you haven't heard of mathematical embroidery yet, this course is for you! In this course we' wi'll teach you what you need to 
+                start making cards on your own. We' wi'll also give you advice, which will help you improve your skills very fast!</p>
+            <h3>50€</h3>
+            </div>
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>If you've ever tried to make a card using mathematical embroidery but you gave up for some reason, we prepared this course for you! 
+                In this course we'll mostly focus on mastering the skills you already have as well as getting rid of your weaknesses. </p>
+            <h3>70€</h3>
+            </div>
+        <div class="course-col">
+            <h3>Advanced</h3>
+            <p>If you already can make cards using mathematical embroidery but you want to learn how to teach others to do that, we are here to help you!
+                We will provide you with teaching techniques as well as useful materials, which will make your students understand this technique.</p>
+            <h3>100€</h3>
+            </div>
+    </div>
+</section>
+
+
+
+
+
+<!---------------- Call to action ---------------->
+<section class="cta">
+    <h1>Enroll for our various courses</h1>
+    <a href="contact.html" class="hero-btn">CONTACT US</a>
+</section>
+
+<!---------------- Footer ---------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are a group of people interested in mathematical embroidery. We want to pass our knowledge to others<br> since we believe that this 
+        technique isn't known well enough and also it is a great way of unwinding.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i> by Izabela Szkaradek</p>
+</section>
+
+<!---------------- JavaScript for Menu ---------------->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+</script>
+
+</body>
+</html>

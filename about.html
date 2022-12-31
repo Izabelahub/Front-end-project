@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Mathematical embroidery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <script src="https://kit.fontawesome.com/ede9840980.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<section class="sub-header"> 
+    <nav>
+        <a href="index.html"><img scr="https://media.geeksforgeeks.org/wp-content/uploads/20190506164011/logo3.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+</section>
+
+<!---------------- About Us ---------------->
+<section class="about">
+    <div class="row">
+        <div class="about-col">
+            <h1>The first company which wants to share mathematical embroidery's passion!</h1>
+            <p>I am Izabela Szkaradek, the owner of the company. I am fascinated by mathematical embroidery and eager to teach other passionate people.
+                I learnt how to create cards using this technique around 10 years ago and I have been improving it since then. People any age can join us
+                as there is nothing such as being too young or too old for this type of hobby.
+            </p>
+        </div>
+    <div class="about-col">
+        <img src="img/portrait.jpg">
+    </div>
+    </div>
+</section>
+
+
+<!---------------- Footer ---------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are a group of people interested in mathematical embroidery. We want to pass our knowledge to others<br> since we believe that this 
+        technique isn't known well enough and also it is a great way of unwinding.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i> by Izabela Szkaradek</p>
+</section>
+
+<!---------------- JavaScript for Menu ---------------->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+</script>
+
+</body>
+</html>

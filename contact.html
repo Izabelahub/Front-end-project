@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Mathematical embroidery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <script src="https://kit.fontawesome.com/ede9840980.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<section class="sub-header-contact"> 
+    <nav>
+        <a href="index.html"><img scr="https://media.geeksforgeeks.org/wp-content/uploads/20190506164011/logo3.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+        <h1>Contact Us</h1>
+
+</section>
+
+<!---------------- Contact section ---------------->
+<div class="container">
+
+    <div class="row">
+      <div class="column">
+        <img src="img/contactme.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="poland">Poland</option>
+            <option value="finland">Finland</option>
+            <option value="norway">Norway</option>
+            <option value="sweden">Sweden</option>
+            <option value="france">France</option>
+            <option value="spain">Spain</option>
+            <option value="germany">Germany</option>
+            <option value="slovakia">Slovakia</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+<!---------------- Footer ---------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are a group of people interested in mathematical embroidery. We want to pass our knowledge to others<br> since we believe that this 
+        technique isn't known well enough and also it is a great way of unwinding.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i> by Izabela Szkaradek</p>
+</section>
+
+<!---------------- JavaScript for Menu ---------------->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+</script>
+
+</body>
+</html>

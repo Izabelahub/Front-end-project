@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Mathematical embroidery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <script src="https://kit.fontawesome.com/ede9840980.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<section class="header"> 
+    <nav>
+        <a href="index.html"><img scr="https://media.geeksforgeeks.org/wp-content/uploads/20190506164011/logo3.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+        <h1>The Best Course</h1>
+        <p>This course is for anyone who wants to find a new hobby, want to master their mathematical embroidery <br>or give a present to somebody</p>
+        <a href="" class="hero-btn">Visit us to know more</a>
+    </div>
+
+</section>
+
+<!---------------- what is math emb ---------------->
+<section class="math-emb">
+    <h1>What is mathematical embroidery?</h1>
+    <p>Mathematical embroidery is a graphic image made in a special way with threads on thicker paper or other hard substrate. 
+        To create it, you can use ordinary threads, mouline threads or strings - preferably colored ones. Embroidery consists 
+        in threading a thread according to a fixed pattern. You can do it as a hobby or create cards for special occasions.</p>  
+    <div class="row">
+        <div class="column">
+            <img src="./img/project1.jpeg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="./img/project2.jpeg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="./img/project3.jpeg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="./img/project4.jpeg" style="width:100%">
+        </div>
+    </div>
+</section>
+
+
+<!---------------- course ---------------->
+<section class="course">
+    <h1>Courses we offer</h1>
+    <p>We want our courses to be applicable to anyone and that's why we have 3 courses to choose from - depending on what's your goal.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Beginner</h3>
+            <p>If you haven't heard of mathematical embroidery yet, this course is for you! In this course we' wi'll teach you what you need to 
+                start making cards on your own. We' wi'll also give you advice, which will help you improve your skills very fast!</p>
+        </div>
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>If you've ever tried to make a card using mathematical embroidery but you gave up for some reason, we prepared this course for you! 
+                In this course we'll mostly focus on mastering the skills you already have as well as getting rid of your weaknesses. </p>
+        </div>
+        <div class="course-col">
+            <h3>Advanced</h3>
+            <p>If you already can make cards using mathematical embroidery but you want to learn how to teach others to do that, we are here to help you!
+                We will provide you with teaching techniques as well as useful materials, which will make your students understand this technique.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!---------------- testimonials ---------------->
+<section class="testimonials">
+    <h1>Opinions about our courses</h1>
+    <p>Take a look what trainees think about our courses.</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="./img/user1.jpg">
+            <div>
+                <p>I took the Intermediate course since I didn't feel like a beginner since sewing clothes is my job. In my opinion the course covered everything 
+                    I needed in order to know how to master my mathematical embroidery skills. I wish the price was lower although the content is definitely worth the money.</p>
+                <h3>Elyse Bowden</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="./img/user2.jpg">
+            <div>
+                <p>I really enjoyed the Beginner course and I highly recommend it! I had a chance to learn how to make cards and it became my new hobby. I love gifting my homemade 
+                    cards to my family for several occasions. Such a card is the best present ever because I can easily personalize it!</p>
+                <h3>Hazel Traynor</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!---------------- Call to action ---------------->
+<section class="cta">
+    <h1>Enroll for our various courses</h1>
+    <a href="contact.html" class="hero-btn">CONTACT US</a>
+</section>
+
+<!---------------- Footer ---------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are a group of people interested in mathematical embroidery. We want to pass our knowledge to others<br> since we believe that this 
+        technique isn't known well enough and also it is a great way of unwinding.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i> by Izabela Szkaradek</p>
+</section>
+
+<!---------------- JavaScript for Menu ---------------->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+</script>
+
+</body>
+</html>
