@@ -11,3 +11,4 @@ The files needed to run the project:
 - style.css
 
 The Word document "SDS_learning_diary" shows my learning progress thorough the course.
+The video shows my website both on laptop and iPhone SE - the aim is to show the responsiveness.
